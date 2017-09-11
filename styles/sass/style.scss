@@ -27,3 +27,38 @@ header{
 }
 /*FOOTER*/
 /*INDEX*/
+#index{
+	margin: 0 0px 0 51px;
+	#background_video{
+		width: 100%;
+		height: 400px;
+		background: orange;
+	}
+	#mision_vision{
+		clear: both;
+		text-align: center;
+		.mision_txt{
+			//display: none;
+			display: inline-block;
+			width: 70%;
+			text-align: center;
+		}
+		.mision_img{
+			display: inline-block;
+			width: 10%;
+			height: 100px;
+			background-color: #ccc;
+			margin: 0 2%;
+		}
+		.vision_img{
+			display: inline-block;
+			width: 10%;
+			height: 100px;
+			background-color: #ccc;
+			margin: 0 2%;
+		}
+		.vision_txt{
+			display: none;
+		}
+	}
+}
