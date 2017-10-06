@@ -59,8 +59,10 @@ header{
 /*FOOTER*/
 
 /*INDEX*/
-#index{
+section{
 	margin: 0 0px 0 51px;
+}
+#index{
 	#background_video{
 		width: 100%;
 		height: 400px;
@@ -91,8 +93,12 @@ header{
 	}
 	#historia{
 		position: relative;
-		height: 380px;
-		margin-top: 30px;
+		height: 410px;
+		padding-top: 30px;
+		color: #fff;
+		background-image: url(../images/bg_history.jpeg);
+		background-attachment: fixed;
+		text-shadow: 0 0 10px #000;
 		h3{
 			font-size: 30px;
 			text-align: center;
@@ -119,15 +125,15 @@ header{
 		}
 		.ciculo_1{
 			background-color: red;
-			top: 40px;
+			top: 70px;
 		}
 		.ciculo_2{
 			background-color: green;
-			top: 165px;
+			top: 195px;
 		}
 		.ciculo_3{
 			background-color: blue;
-			top: 290px;
+			top: 320px;
 		}
 		.textos{
 			width: 250px;
@@ -147,14 +153,22 @@ header{
 			}
 		}
 		.texto_1{
-			top: 40px;
+			top: 70px;
 		}
 		.texto_2{
-			top: 165px;
+			top: 195px;
 		}
 		.texto_3{
-			top: 290px;
+			top: 320px;
 		}
+	}
+	#antecedentes{
+		h3{
+			padding-top: 30px;
+			font-size: 30px;
+			text-align: center;
+		}
+		p{}
 	}
 }
 #nosotros{
@@ -184,5 +198,19 @@ header{
 		.vision_txt{
 			display: none;
 		}
+	}
+}
+#servicios{}
+#contacto{
+	form{
+		text-align: center;
+		label{}
+		input{
+			&.contact_name{}
+			&.contact_email{}
+			&.contact_asunto{}
+			&.contact_submit{}
+		}
+		textarea{}
 	}
 }
