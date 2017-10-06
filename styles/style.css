@@ -44,40 +44,48 @@ header nav ul li {
   padding: 10px 0;
 }
 /* line 35, sass/style.scss */
+header nav ul li a {
+  color: red;
+}
+/* line 38, sass/style.scss */
 header nav ul li img {
   width: 100%;
   transition: .3s linear;
 }
-/* line 42, sass/style.scss */
+/* line 45, sass/style.scss */
 header span {
   font-size: 0px;
   transition: .3s linear;
 }
-/* line 46, sass/style.scss */
+/* line 49, sass/style.scss */
 header i {
   transition: .3s linear;
 }
-/* line 49, sass/style.scss */
+/* line 52, sass/style.scss */
 header:hover {
   width: 200px;
 }
-/* line 51, sass/style.scss */
+/* line 54, sass/style.scss */
 header:hover span {
   font-size: 25px;
 }
-/* line 54, sass/style.scss */
+/* line 57, sass/style.scss */
 header:hover i {
   font-size: 30px;
 }
 
 /*FOOTER*/
 /*INDEX*/
-/* line 62, sass/style.scss */
+/* line 65, sass/style.scss */
 section {
   margin: 0 0px 0 51px;
 }
+/* line 67, sass/style.scss */
+section h2 {
+  text-align: center;
+}
 
-/* line 66, sass/style.scss */
+/* line 72, sass/style.scss */
 #index #background_video {
   width: 100%;
   height: 400px;
@@ -85,7 +93,7 @@ section {
   overflow: hidden;
   position: relative;
 }
-/* line 73, sass/style.scss */
+/* line 79, sass/style.scss */
 #index #background_video .video_txt div {
   position: absolute;
   top: 50%;
@@ -94,17 +102,17 @@ section {
   opacity: 0;
   transition: 1s linear;
 }
-/* line 80, sass/style.scss */
+/* line 86, sass/style.scss */
 #index #background_video .video_txt div p {
   color: #fff;
   text-shadow: 0px 0px 10px #000;
   font-size: 50px;
 }
-/* line 88, sass/style.scss */
+/* line 94, sass/style.scss */
 #index #background_video .video_txt div.active {
   opacity: 1;
 }
-/* line 94, sass/style.scss */
+/* line 100, sass/style.scss */
 #index #historia {
   position: relative;
   height: 410px;
@@ -114,13 +122,13 @@ section {
   background-attachment: fixed;
   text-shadow: 0 0 10px #000;
 }
-/* line 102, sass/style.scss */
+/* line 108, sass/style.scss */
 #index #historia h3 {
   font-size: 30px;
   text-align: center;
   height: 40px;
 }
-/* line 107, sass/style.scss */
+/* line 113, sass/style.scss */
 #index #historia .linea {
   width: 2px;
   height: 250px;
@@ -130,7 +138,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 116, sass/style.scss */
+/* line 122, sass/style.scss */
 #index #historia .circulos {
   width: 50px;
   height: 50px;
@@ -138,99 +146,205 @@ section {
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 123, sass/style.scss */
+/* line 129, sass/style.scss */
 #index #historia .circulos, #index #historia .textos {
   position: absolute;
 }
-/* line 126, sass/style.scss */
+/* line 132, sass/style.scss */
 #index #historia .ciculo_1 {
   background-color: red;
   top: 70px;
 }
-/* line 130, sass/style.scss */
+/* line 136, sass/style.scss */
 #index #historia .ciculo_2 {
   background-color: green;
   top: 195px;
 }
-/* line 134, sass/style.scss */
+/* line 140, sass/style.scss */
 #index #historia .ciculo_3 {
   background-color: blue;
   top: 320px;
 }
-/* line 138, sass/style.scss */
+/* line 144, sass/style.scss */
 #index #historia .textos {
   width: 250px;
   text-align: center;
   left: 50%;
 }
-/* line 142, sass/style.scss */
+/* line 148, sass/style.scss */
 #index #historia .textos.left {
   transform: translateX(-290px);
 }
-/* line 145, sass/style.scss */
+/* line 151, sass/style.scss */
 #index #historia .textos.right {
   transform: translateX(40px);
 }
-/* line 148, sass/style.scss */
+/* line 154, sass/style.scss */
 #index #historia .textos h4 {
   font-size: 17px;
 }
-/* line 151, sass/style.scss */
+/* line 157, sass/style.scss */
 #index #historia .textos p {
   font-size: 12px;
 }
-/* line 155, sass/style.scss */
+/* line 161, sass/style.scss */
 #index #historia .texto_1 {
   top: 70px;
 }
-/* line 158, sass/style.scss */
+/* line 164, sass/style.scss */
 #index #historia .texto_2 {
   top: 195px;
 }
-/* line 161, sass/style.scss */
+/* line 167, sass/style.scss */
 #index #historia .texto_3 {
   top: 320px;
 }
-/* line 166, sass/style.scss */
+/* line 172, sass/style.scss */
 #index #antecedentes h3 {
   padding-top: 30px;
   font-size: 30px;
   text-align: center;
 }
 
-/* line 175, sass/style.scss */
-#nosotros #mision_vision {
-  clear: both;
+/* line 180, sass/style.scss */
+#nosotros {
+  position: relative;
+  height: 100%;
+  background: green;
+}
+/* line 185, sass/style.scss */
+#nosotros .select_cont {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 425px;
+  transition: .3s linear;
+}
+/* line 192, sass/style.scss */
+#nosotros .select_cont div {
+  width: 200px;
+  height: 250px;
+  margin: 5px;
+  display: inline-block;
+  background-color: blue;
+  transition: .3s linear;
+}
+/* line 204, sass/style.scss */
+#nosotros .select_cont.selected {
+  width: 125px;
+}
+/* line 206, sass/style.scss */
+#nosotros .select_cont.selected div {
+  width: 50px;
+  height: 62px;
+}
+/* line 211, sass/style.scss */
+#nosotros .select_cont.selected_1 {
+  left: 21%;
+  top: 16%;
+}
+/* line 214, sass/style.scss */
+#nosotros .select_cont.selected_1 .vision_selector {
+  opacity: 0;
+}
+/* line 218, sass/style.scss */
+#nosotros .select_cont.selected_2 {
+  left: 79%;
+  top: 16%;
+}
+/* line 221, sass/style.scss */
+#nosotros .select_cont.selected_2 .mision_selector {
+  opacity: 0;
+}
+/* line 225, sass/style.scss */
+#nosotros .select_cont.selected_3 {
+  left: 21%;
+  top: 85%;
+}
+/* line 228, sass/style.scss */
+#nosotros .select_cont.selected_3 .valores_selector {
+  opacity: 0;
+}
+/* line 232, sass/style.scss */
+#nosotros .select_cont.selected_4 {
+  left: 79%;
+  top: 85%;
+}
+/* line 235, sass/style.scss */
+#nosotros .select_cont.selected_4 .filosofia_selector {
+  opacity: 0;
+}
+/* line 240, sass/style.scss */
+#nosotros .text_container {
+  width: 56%;
+  overflow: hidden;
+  height: 66%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+}
+/* line 249, sass/style.scss */
+#nosotros .text_container h3 {
   text-align: center;
 }
-/* line 178, sass/style.scss */
-#nosotros #mision_vision .mision_txt {
-  display: inline-block;
-  width: 70%;
-  text-align: center;
+/* line 252, sass/style.scss */
+#nosotros .text_container p {
+  text-align: justify;
 }
-/* line 184, sass/style.scss */
-#nosotros #mision_vision .mision_img {
-  display: inline-block;
-  width: 10%;
-  height: 100px;
-  background-color: #ccc;
-  margin: 0 2%;
-}
-/* line 191, sass/style.scss */
-#nosotros #mision_vision .vision_img {
-  display: inline-block;
-  width: 10%;
-  height: 100px;
-  background-color: #ccc;
-  margin: 0 2%;
-}
-/* line 198, sass/style.scss */
-#nosotros #mision_vision .vision_txt {
-  display: none;
+/* line 254, sass/style.scss */
+#nosotros .text_container p img {
+  float: right;
+  width: 200px;
+  height: 250px;
 }
 
-/* line 205, sass/style.scss */
+/* line 264, sass/style.scss */
+#servicios .consultoria_text {
+  text-align: left;
+}
+/* line 267, sass/style.scss */
+#servicios .consultoria_text p {
+  text-align: justify;
+}
+/* line 269, sass/style.scss */
+#servicios .consultoria_text p img {
+  float: right;
+  width: 200px;
+  height: 250px;
+}
+/* line 276, sass/style.scss */
+#servicios .outsoursing_text {
+  text-align: right;
+}
+/* line 279, sass/style.scss */
+#servicios .outsoursing_text p {
+  text-align: justify;
+}
+/* line 281, sass/style.scss */
+#servicios .outsoursing_text p img {
+  float: left;
+  width: 200px;
+  height: 250px;
+}
+/* line 288, sass/style.scss */
+#servicios .comercializadora_text {
+  text-align: left;
+}
+/* line 291, sass/style.scss */
+#servicios .comercializadora_text p {
+  text-align: justify;
+}
+/* line 293, sass/style.scss */
+#servicios .comercializadora_text p img {
+  float: right;
+  width: 200px;
+  height: 250px;
+}
+
+/* line 303, sass/style.scss */
 #contacto form {
   text-align: center;
 }

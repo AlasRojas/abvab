@@ -32,6 +32,9 @@ header{
 				text-decoration: none;
 				list-style: none;
 				padding: 10px 0;
+				a{
+					color: red;
+				}
 				img{
 					width: 100%;
 					transition: .3s linear;
@@ -61,6 +64,9 @@ header{
 /*INDEX*/
 section{
 	margin: 0 0px 0 51px;
+	h2{
+		text-align: center;
+	}
 }
 #index{
 	#background_video{
@@ -172,36 +178,128 @@ section{
 	}
 }
 #nosotros{
-	#mision_vision{
-		clear: both;
-		text-align: center;
-		.mision_txt{
-			//display: none;
+	position: relative;
+	height: 100%;
+	background: green;
+	h2{}
+	.select_cont{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 425px;
+		transition: .3s linear;
+		div{
+			width: 200px;
+			height: 250px;
+			margin: 5px;
 			display: inline-block;
-			width: 70%;
+			background-color: blue;
+			transition: .3s linear;
+			&.filosofia_selector{}
+			&.valores_selector{}
+			&.mision_selector{}
+			&.vision_selector{}
+		}
+		&.selected{
+			width: 125px;
+			div{
+				width: 50px;
+				height: 62px;
+			}
+		}
+		&.selected_1{
+			left: 21%;
+			top: 16%;
+			.vision_selector{ 
+				opacity: 0; 
+			}
+		}
+		&.selected_2{
+			left: 79%;
+			top: 16%;
+			.mision_selector{ 
+				opacity: 0;  
+			}
+		}
+		&.selected_3{
+			left: 21%;
+			top: 85%;
+			.valores_selector{ 
+				opacity: 0; 
+			}
+		}
+		&.selected_4{
+			left: 79%;
+			top: 85%;
+			.filosofia_selector{
+				opacity: 0; 
+			}
+		}
+	}
+	.text_container{
+		width: 56%;
+		overflow: hidden;
+		height: 66%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		overflow-y: scroll;
+		h3{
 			text-align: center;
 		}
-		.mision_img{
-			display: inline-block;
-			width: 10%;
-			height: 100px;
-			background-color: #ccc;
-			margin: 0 2%;
-		}
-		.vision_img{
-			display: inline-block;
-			width: 10%;
-			height: 100px;
-			background-color: #ccc;
-			margin: 0 2%;
-		}
-		.vision_txt{
-			display: none;
+		p{
+			text-align: justify;
+			img{
+				float: right;
+				width: 200px;
+				height: 250px;
+			}
 		}
 	}
 }
-#servicios{}
+#servicios{
+	h2{}
+	.consultoria_text{
+		text-align: left;
+		h3{}
+		p{
+			text-align: justify;
+			img{
+				float: right;
+				width: 200px;
+				height: 250px;
+			}
+		}
+	}
+	.outsoursing_text{
+		text-align: right;
+		h3{}
+		p{
+			text-align: justify;
+			img{
+				float: left;
+				width: 200px;
+				height: 250px;
+			}
+		}
+	}
+	.comercializadora_text{
+		text-align: left;
+		h3{}
+		p{
+			text-align: justify;
+			img{
+				float: right;
+				width: 200px;
+				height: 250px;
+			}
+		}
+	}
+}
 #contacto{
+	h2{}
 	form{
 		text-align: center;
 		label{}
